@@ -1,0 +1,165 @@
+/* ---------- Root Variables ---------- */
+:root {
+    --primary-color: #1f4e6b;
+    --secondary-color: #0f172a;
+    --accent-color: #2563eb;
+    --background-color: #f4f6f8;
+    --card-border: #cbd5e1;
+}
+
+/* ---------- Reset ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: #111;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2f2f2f;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+/* ---------- Main ---------- */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- Grid Layout for Cards ---------- */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+/* ---------- Card Styling ---------- */
+.card {
+    background-color: white;
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Card headers */
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Card content */
+.card p,
+.card ul {
+    padding: 1rem;
+    margin: 0;
+}
+
+/* ---------- About Me Section ---------- */
+.card:first-of-type {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+
+.card:first-of-type img {
+    width: 100%;
+    border-radius: 4px;
+    margin: 1rem;
+}
+
+/* Location subsection */
+.location {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 120px auto;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.location img {
+    width: 100%;
+    border: 1px solid var(--card-border);
+}
+
+.location small {
+    font-style: italic;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* ---------- Web Dev Resources ---------- */
+.card ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    color: var(--accent-color);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    color: #e5e7eb;
+    font-size: 0.8rem;
+}
