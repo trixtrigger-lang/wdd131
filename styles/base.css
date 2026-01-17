@@ -1,4 +1,3 @@
-/* ---------- Root Variables ---------- */
 :root {
     --primary-color: #1f4e6b;
     --secondary-color: #0f172a;
@@ -7,7 +6,6 @@
     --card-border: #cbd5e1;
 }
 
-/* ---------- Reset ---------- */
 * {
     box-sizing: border-box;
 }
@@ -16,13 +14,12 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background-color);
-    color: #111;
+    color: var(--secondary-color);
 }
 
-/* ---------- Header ---------- */
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     padding: 1rem 0;
 }
 
@@ -34,15 +31,14 @@ header {
     margin-bottom: 0.75rem;
 }
 
-/* ---------- Navigation ---------- */
 nav {
     display: flex;
     justify-content: space-evenly;
-    background-color: #2f2f2f;
+    background-color: var(--primary-color);
 }
 
 nav a {
-    color: white;
+    color: var(--background-color);
     text-decoration: none;
     padding: 0.75rem 1.5rem;
     transition: background-color 0.3s ease;
@@ -52,7 +48,6 @@ nav a:hover {
     background-color: var(--accent-color);
 }
 
-/* ---------- Main ---------- */
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -68,33 +63,28 @@ main h1 {
     margin-bottom: 1.5rem;
 }
 
-
-/* ---------- Card Styling ---------- */
 .card {
-    background-color: white;
+    background-color: var(--background-color);
     border: 1px solid var(--card-border);
     border-radius: 6px;
     overflow: hidden;
 }
 
-/* Card headers */
 .card h2 {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     text-align: center;
     padding: 0.75rem;
     margin: 0;
     font-size: 1.2rem;
 }
 
-/* Card content */
 .card p,
 .card ul {
     padding: 1rem;
     margin: 0;
 }
 
-/* ---------- About Me Section ---------- */
 .card:first-of-type {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -107,7 +97,6 @@ main h1 {
     margin: 1rem;
 }
 
-/* Location subsection */
 .location {
     grid-column: 1 / -1;
     display: grid;
@@ -128,7 +117,6 @@ main h1 {
     margin-top: 0.25rem;
 }
 
-/* ---------- Web Dev Resources ---------- */
 .card ul {
     list-style-type: disc;
     padding-left: 2rem;
@@ -142,10 +130,9 @@ main h1 {
     color: var(--accent-color);
 }
 
-/* ---------- Footer ---------- */
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -157,6 +144,6 @@ footer p {
 }
 
 #lastModified {
-    color: #e5e7eb;
+    color: var(--background-color);
     font-size: 0.8rem;
 }
