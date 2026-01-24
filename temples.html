@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album showcasing temples around the world.">
+    <meta name="author" content="Paul Ethan">
+
+    <title>Temple Album</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Mobile First CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-bar">
+            <h2>Temple Album</h2>
+            <button id="menu-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+
+        <nav id="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+
+        <section class="gallery">
+            <!-- 9 Figures -->
+            <figure>
+                <img src="images/salt lake temple.jpg" alt="Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome Italy temple.jpg" alt="Temple">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi kenya temple.jpg" alt="Temple">
+                <figcaption>Nairobi Kenya Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tokyo japan temple.jpg" alt="Temple">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paris france temple.jpg" alt="Temple">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/london england temple.jpg" alt="Temple">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/manila philipines temple.jpg" alt="Temple">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sydney australia temple.jpg" alt="Temple">
+                <figcaption>Sydney Australia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Accra Ghana temple.jpg" alt="Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Paul Ethan | Kenya</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
