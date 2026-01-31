@@ -1,0 +1,65 @@
+/* CSS VARIABLES */
+:root {
+    --primary-color: #006600;
+    --secondary-color: #bb0000;
+    --background-color: #ffffff;
+    --text-color: #222;
+    --font-main: Arial, Helvetica, sans-serif;
+}
+
+/* GLOBAL STYLES */
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HERO IMAGE */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CONTENT */
+.content,
+.weather {
+    padding: 1rem;
+}
+
+/* WEATHER */
+.weather {
+    background-color: #f4f4f4;
+}
+
+.weather-icon {
+    width: 50px;
+}
+
+/* MEDIA QUERY (LARGE VIEW) */
+@media (min-width: 700px) {
+
+    /* Remove SVG icon on large view */
+    .weather-icon {
+        display: none;
+    }
+
+    /* Add emoticon after Weather heading */
+    .weather h2::after {
+        content: " ⛅";
+    }
+}
