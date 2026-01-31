@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Country information page with weather and responsive hero image displayed on a web.">
+        content="Country information page with weather and responsive hero image displayed on a web page.">
     <meta name="author" content="Paul Ethan">
     <title>Country Page</title>
+
     <link rel="stylesheet" href="styles/place.css">
 
     <script src="scripts/place.js" defer></script>
@@ -15,7 +16,7 @@
 
 <body>
     <header>
-        <h1>Expl Kenya</h1>
+        <h1>Explore Kenya</h1>
     </header>
 
     <main>
@@ -26,7 +27,6 @@
                 <img src="images/hero-small.webp" alt="Landscape view representing Kenya" width="1500" height="750">
             </picture>
         </section>
-
         <section class="content">
             <h2>About the Country</h2>
             <p>
@@ -36,9 +36,20 @@
 
         <section class="weather">
             <h2>Weather</h2>
-
-            <!-- Mobile SVG icon -->
             <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
 
             <p>Temperature: <span id="temperature">10</span> °C</p>
-            <p>Wind Speed: <span id="windspeed">10
+            <p>Wind Speed: <span id="windspeed">10</span> km/h</p>
+            <p>Wind Chill: <span id="windchill">--</span></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> | Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
