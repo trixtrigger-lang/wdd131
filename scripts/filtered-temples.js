@@ -54,7 +54,7 @@ const temples = [
         location: "Nairobi, Kenya",
         dedicated: "2023, May, 21",
         area: 19800,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-56338.jpg"
+        imageUrl: "https://churchofjesuschristtemples.org/nairobi-kenya-temple/photographs/#Official-4"
     },
     {
         templeName: "Accra Ghana",
