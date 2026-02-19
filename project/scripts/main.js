@@ -17,7 +17,7 @@ const foods = [
         name: "Bhajia",
         category: "fried",
         description: "Deep-fried potato slices coated in spiced batter.",
-        image: "images/bhajia.jpg",
+        image: "images/bhajiamamaoliech.jpg",
         alt: "Crispy bhajia served with dipping sauce"
     },
     {
