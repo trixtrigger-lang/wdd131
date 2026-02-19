@@ -1,12 +1,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    background: #FFF8E1;
+    background-color: #FFF8E1;
     color: #333;
 }
 
 header {
-    background: #1B5E20;
+    background-color: #1B5E20;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -22,12 +22,9 @@ main {
     padding: 1rem;
 }
 
-button {
-    background: #F9A825;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin: 5px;
-    cursor: pointer;
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .food-grid {
@@ -38,12 +35,40 @@ button {
 .card {
     background: white;
     padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
     border-radius: 5px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1B5E20;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #F9A825;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 5px;
+    cursor: pointer;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background: #1B5E20;
+    background-color: #1B5E20;
     color: white;
+    margin-top: 2rem;
 }
